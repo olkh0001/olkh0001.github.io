@@ -1,3 +1,491 @@
-h1 {
-    font-size: 30px;
+* {
+    box-sizing: border-box;
 }
+
+h1 {
+    font-size: 3.6rem;
+    line-height: 1.5;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+    font-size: 2.8rem;
+    line-height: 1.5;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h3 {
+    font-size: 1.7rem;
+    line-height: 1.5;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: -0.5rem;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+h5 {
+    font-size: 0.8rem;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 2.2rem;
+
+}
+
+p {
+    font-size: 14px;
+    margin-bottom: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5rem;
+}
+
+nav {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 2.5rem;
+    font-size: 18px;
+}
+
+form {
+    font-size: 0.9rem;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+table {
+    font-size: 0.9rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+button {
+    background-color: #222;
+    border: none;
+    padding: 10px 0 20px 0;
+    width: 37%;
+    font-size: 15px;
+    color: white;   
+}
+
+body {
+    margin: 0;
+}
+
+.wrapper-1 {
+    max-width: 90%;
+    margin: auto;
+    padding: 1rem;
+    background-color: #222;
+}
+
+.wrapper-2 {
+    width: 90%;
+    margin: auto;
+}
+
+header { 
+    background-color: #c78c06;
+}
+
+header img {
+    width: 35%;
+}
+
+nav, .main-nav {
+    text-align: center;
+}
+
+nav ul {
+    padding-left: 0;
+    line-height: 4rem;
+}
+
+a:link {
+    color: #c78c06;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #c78c06;
+}
+
+a:hover {
+    color: #ffe6ac;
+}
+
+a:active {
+    color: transparent;
+}
+
+.about-us {
+    background-color: #ffe6ac;
+    padding: 1rem;
+}
+
+.digital-transformation {
+    background-color: #ffe6ac;
+    padding: 1rem;
+}
+
+.marketing {
+    background-color: #ffe6ac;
+    padding: 1rem;
+}
+
+.video-production {
+    background-color: #ffe6ac;
+    padding: 1rem;
+}
+
+.web-dev {
+    background-color: #ffe6ac;
+    padding: 1rem;
+}
+
+.print {
+    background-color: #ffe6ac;
+    padding: 1rem;
+}
+
+.john-doe {
+    background-color: #ffe6ac;
+    padding: 1rem;
+}
+
+.bob-rite {
+    margin-top: 1rem;
+    background-color: #ffe6ac;
+    padding: 1rem;
+}
+
+hr {
+    border-top: 2.5px solid #c78c06;
+}
+/* Making inputs appear in full width */
+.contact-us input[type=text], select {
+    width: 100%;
+    display: inline-block;
+    margin: 9px 0 16px 0;
+    padding: 3px;
+}
+/* Making textarea static and setting width 100% */
+textarea {
+    resize: none;
+    width: 100%;
+    height: 130px;
+    margin: 9px 0 0 0;
+}
+/* Styling send button */
+.contact-us input[type=submit], select {
+    background-color: #222;
+    border: none;
+    color: #c78c06;
+    padding: 5px;
+    margin: 10px 0 0 0;
+    font-size: 22px;
+    cursor: pointer;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid;
+    padding: 20px;
+}
+
+table th {
+    background-color: #ffe6ac;
+}
+
+footer {
+    color: #c78c06;
+    background-color: #222;
+    padding: 10px;
+}
+
+.welcome button {
+    background-color: #c78c06;
+    color: #222;   
+}
+
+.fa-caret-right {
+    color: white;
+    font-size: 35px;
+    padding: 8px;
+
+}
+
+.welcome .fa-caret-right {
+    color: #222;
+    padding-right: 8px;
+}
+
+.searchbar input[type=text] {
+    width: 90%;
+    padding: 7px;
+}
+
+.fa-magnifying-glass {
+    color: #c78c06;
+    border: 1px solid #c78c06;
+    padding: 7px 7px 9px 7px;
+}
+
+.vision {
+    background-image: url(../images/vision.jpg);
+    color: white;
+    padding: 1rem;
+    background-size: cover;
+    height: 100%; 
+}
+
+.vision button {
+    border: 0.8px solid #c78c06;   
+}
+
+.welcome {
+    background-image: url(../images/main-banner.jpg);
+    padding: 1rem;
+    background-size: cover;
+}
+
+iframe {
+    width: 100%;
+}
+
+.welcome-container {
+    background-color: rgb(34,34,34, .6);
+    width: 100%;
+    color: white;
+    padding: 1rem;
+}
+
+@media screen and (min-width: 760px) {
+    .wrapper-1 {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    
+    header {
+        background-color: transparent;
+        width: 25%;
+    }
+    /* Navigation appears in a horizintal line */
+    ul li {
+        display: inline-flex;
+        margin: 15px;
+    }
+
+    .searchbar {
+        padding-left: 60px;
+        height: 30px;
+        margin: 30px;
+    } 
+    /* Searchbar and icon apeear next to each other */
+    .searchbar, .fa-magnifying-glass {
+        display: flex;
+    }
+
+    button {
+        font-size: 20px;
+    }
+
+    .welcome-container button {
+        width: 20%;
+    }
+    /* Image and text positioned next to each other */
+    .about-us {
+        display: flex;
+        justify-content: center;
+        padding: 15px 70px 15px 70px;
+    }
+    
+    .about-us img {
+        width: 40%;
+        height: 287px;
+    }
+    /* Styling text in "about us" container */
+    .about-article {
+        padding-left: 15px;
+        font-size: 12px;
+        padding-top: 0;
+        max-height: fit-content;
+    }
+    
+    .our-services {
+        display: grid;
+        grid-template-areas: 
+        "digital-transformation digital-transformation digital-transformation marketing marketing marketing"
+        "video-production video-production web-dev web-dev print print";
+        gap: 1rem;
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+        margin-left: 45px;
+        margin-right: 45px;
+        padding-bottom: 35px;
+    }
+
+    .our-services p {
+        margin: 15px;
+    }
+
+    .our-services h3  {
+        margin: 15px;
+    }
+    /* Styling h2 "oue services" */
+    .services {
+        padding-left: 40px;
+        padding-top: 25px;
+    }
+
+    .our-team {
+        margin-left: 45px;
+        margin-right: 45px;
+    }
+
+    .our-team p {
+        text-align: center;
+    }
+
+    .our-team h2 {
+       margin-left: 10px;
+       margin-bottom: 1px;
+       margin-top: 40px;
+    }
+
+    .contact-us h2 {
+        padding: 10px;
+        padding-left: 0px;
+    }
+
+    .location h2 {
+        padding: 10px;
+        padding-left: 0px;
+    }
+
+    .digital-transformation {
+        grid-area: digital-transformation;
+    }
+
+    .marketing {
+        grid-area: marketing;
+    }
+
+    .video-production {
+        grid-area: video-production;
+    }
+
+    .web-dev {
+        grid-area: web-dev;
+    }
+
+    .print {
+        grid-area: print;
+    }
+
+    .digital-transformation, img {
+        padding: 0px;
+    }
+
+    .marketing, img {
+        padding: 0px;
+    }
+
+    .video-production, img {
+        padding: 0px;
+    }
+
+    .web-dev, img {
+        padding: 0px;
+    }
+
+    .print, img {
+        padding: 0px;
+    }
+
+    .vision p {
+        margin-left: 70px;
+        margin-right: 70px;
+        margin-bottom: 10px;
+    }
+
+    .vision h3 {
+        margin-left: 68px;
+    }
+
+    .vision button {
+        width: 15%;
+        margin-left: 70px;
+    }
+    /* Content displays in columns */
+     .john-doe {
+        display: flex;
+        background-color: transparent;
+    }
+    /* Content displays in columns */
+    .bob-rite {
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: transparent;   
+    }
+
+    .about-john {
+        padding-left: 20px;
+        background-color: #ffe6ac;
+        width: 120%;   
+    }
+
+    .about-bob {
+        padding-right: 20px;
+        background-color: #ffe6ac;
+    } 
+    /* Contact information and location are displayed next to each other now. Hours of operation are stretched from contact infromation to location */
+    .information {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .operation {
+        grid-row: 2 / span 2;
+        grid-column: 1 / span 2;
+        padding-bottom: 15px;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    .location {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    .contact-us {
+        margin-left: 60px;
+        margin-right: 60px;
+        padding: 0px;
+    }
+
+    .our-services button {
+        width: 100%;
+        text-align: center;
+    }
+} 
